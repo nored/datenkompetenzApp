@@ -1,0 +1,34 @@
+{
+  "cwd": "/home/schwarz/Dokumente/Workspace/datenkompetenz",
+  "type": [
+    "cordova"
+  ],
+  "name": "Datenkompetenz 4.0",
+  "framework": "core",
+  "template": "single-view",
+  "bundler": false,
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": true
+  },
+  "customBuild": false,
+  "pkg": "de.thBrandenburg.datenkompetenz",
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen",
+      "cordova-plugin-wkwebview-engine",
+      "cordova-plugin-file"
+    ]
+  }
+}
