@@ -82,7 +82,7 @@ img.responsive-img {
 .checkbox > div:nth-child(2) {
   margin-top: 4.5em;
   position: absolute;
-  width: 100vw;
+  width: 70vw;
 }
 
 #offline-card {
