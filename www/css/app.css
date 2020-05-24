@@ -80,8 +80,9 @@ img.responsive-img {
 }
 
 .checkbox > div:nth-child(2) {
-  position: fixed;
   margin-top: 4.5em;
+  position: absolute;
+  width: 100vw;
 }
 
 #offline-card {
@@ -93,8 +94,6 @@ img.responsive-img {
 }
 .item-inline {
   display: inline;
-  font-size: var(--f7-list-item-after-font-size);
-  font-weight: var(--f7-list-item-after-font-weight);
   margin-left: auto;
 }
 .checkbox-text {

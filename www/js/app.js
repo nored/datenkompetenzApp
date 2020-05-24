@@ -46,14 +46,10 @@ var app = new Framework7({
   },
 });
 
-$$('.send-button').on('click', function () {
-  console.log(
-    '+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++'
-  );
+$$('#initial-form .send-button').on('click', function () {
   if (app.input.validateInputs('#initial-form')) {
     var formData = app.form.convertToData('#initial-form');
     alert(JSON.stringify(formData));
-    console.log(formData);
   }
 });
 
@@ -61,6 +57,8 @@ function handleOpenURL(url) {
   var strValue = url;
   strValue = strValue.replace('thbdatenkompetenz:/', '');
   if (strValue == '/form/') {
-    app.views.main.router.navigate('/form/', { reloadCurrent: true });
+    setTimeout(function () {
+      app.views.main.router.navigate('/form/', { reloadCurrent: true });
+    }, 200);
   }
 }
