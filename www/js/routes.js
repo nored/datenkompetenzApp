@@ -8,6 +8,10 @@ var routes = [
     url: './pages/impressum.html',
   },
   {
+    path: '/privacy/',
+    url: './pages/privacy.html',
+  },
+  {
     path: '/offline/',
     url: './pages/offline.html',
   },

@@ -38,7 +38,12 @@ var app = new Framework7({
     },
     connection: function (isOnline) {
       if (isOnline) {
-        app.views.main.router.navigate('/', { reloadCurrent: true });
+        if (app.views.main.router.currentRoute.path == '/offline/') {
+          app.views.main.router.navigate('/', {
+            reloadCurrent: true,
+            reloadAll: true,
+          });
+        }
       } else {
         app.views.main.router.navigate('/offline/', { reloadCurrent: true });
       }
@@ -46,9 +51,12 @@ var app = new Framework7({
   },
 });
 
-$$('#initial-form .send-button').on('click', function () {
+$$('#initial-form-send').on('click', function () {
+  alert('click');
   if (app.input.validateInputs('#initial-form')) {
     var formData = app.form.convertToData('#initial-form');
+    formData.mobile = 'true';
+    formData.ds = 'on';
     alert(JSON.stringify(formData));
   }
 });

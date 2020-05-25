@@ -87,6 +87,14 @@ img.responsive-img {
   width: 75vw;
 }
 
+@media screen and (max-width: 351px) {
+  .checkbox > div:nth-child(2) {
+    margin-top: 5.7em;
+    position: absolute;
+    width: 80vw;
+  }
+}
+
 #offline-card {
   margin-top: 5em;
 }
