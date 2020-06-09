@@ -35,15 +35,12 @@
       <div class="view view-main view-init safe-areas">
         <div class="page" data-name="home">
           <!-- Top Navbar -->
-          <div class="navbar navbar-large">
+          <div class="navbar">
             <div class="navbar-bg"></div>
             <div class="navbar-inner">
               <div class="left"></div>
-              <div class="title sliding">Datenkompetenz 4.0</div>
+              <div class="title">Datenkompetenz 4.0</div>
               <div class="right"></div>
-              <div class="title-large">
-                <div class="title-large-text">Datenkompetenz 4.0</div>
-              </div>
             </div>
           </div>
           <!-- Toolbar-->
@@ -62,7 +59,7 @@
             </div>
             <div class="block">
               <div class="list no-hairlines-md">
-                <form class="list" id="initial-form">
+                <form class="list store-data" id="initial-form">
                   <ul>
                     <li>
                       <div class="item-content item-input">
@@ -159,6 +156,126 @@
                     </li>
                   </ul>
                 </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div
+        class="popup"
+        id="offline-popup"
+        data-close-by-backdrop-click="false"
+      >
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="title">Sie sind offline.</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="responsive">
+                <img
+                  src="./assets/logo/aww_logo_700_vector.png"
+                  class="responsive-img"
+                />
+              </div>
+              <div class="card bg-color-red" id="offline-card">
+                <div class="card-header text-color-white">
+                  Es tut uns leid.
+                </div>
+                <div class="card-content card-content-padding text-color-white">
+                  <p>
+                    Wie es scheint ist Ihr Gerät nicht mit dem Internet
+                    verbunden.
+                  </p>
+                </div>
+                <div class="card-footer text-color-white">
+                  Stellen Sie eine Verbindung her, um fortzufahren.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup" id="success-popup">
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <a href="#" class="link popup-close">
+                  <i class="icon icon-back"></i>
+                  <span class="if-not-md">Zurück</span>
+                </a>
+                <div class="title">Vielen Dank!</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="responsive">
+                <img
+                  src="./assets/logo/aww_logo_700_vector.png"
+                  class="responsive-img"
+                />
+              </div>
+              <div class="card bg-color-green" id="offline-card">
+                <div class="card-header text-color-white">
+                  Ihre Daten wurden erfolgreich übermittelt.
+                </div>
+                <div class="card-content card-content-padding text-color-white">
+                  <p>
+                    Bitte überprüfen Sie ihre E-Mails, Sie sollten in kürze eine
+                    Nachricht erhalten. Dort können Sie auswählen, ob Sie lieber
+                    am Pc oder mit Ihrem Mobilgerät weitermachen wollen. Bitte
+                    bestätigen Sie den Link in der E-Mail um fortzufahren.
+                  </p>
+                </div>
+                <div class="card-footer text-color-white"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup" id="final-success-popup">
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="link popup-close">
+                    <i class="icon icon-back"></i>
+                    <span class="if-not-md">Zurück</span>
+                  </a>
+                </div>
+                <div class="title">Vielen Dank!</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="responsive">
+                <img
+                  src="./assets/logo/aww_logo_700_vector.png"
+                  class="responsive-img"
+                />
+              </div>
+              <div class="card bg-color-green" id="offline-card">
+                <div class="card-header text-color-white">
+                  Ihre Daten wurden erfolgreich übermittelt.
+                </div>
+                <div class="card-content card-content-padding text-color-white">
+                  <p>
+                    Bitte überprüfen Sie ihre E-Mails, Sie sollten in kürze eine
+                    Nachricht erhalten.
+                  </p>
+                </div>
+                <div class="card-footer text-color-white"></div>
               </div>
             </div>
           </div>

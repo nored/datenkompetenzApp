@@ -10,8 +10,10 @@
     "serve": "http-server ./www/ -o -c 1 -a localhost -p 8080",
     "build-cordova": "node ./build/build.js && cd cordova && cordova build",
     "build-cordova-ios": "node ./build/build.js && cd cordova && cordova build ios",
+    "build-cordova-ios-release": "node ./build/build.js && cd cordova && cordova build ios --release",
     "run-cordova-ios": "node ./build/build.js && cd cordova && cordova run ios",
     "build-cordova-android": "node ./build/build.js && cd cordova && cordova build android",
+    "build-cordova-android-release": "node ./build/build.js && cd cordova && cordova build android --release",
     "run-cordova-android": "node ./build/build.js && cd cordova && cordova run android",
     "postinstall": "cpy ./node_modules/framework7-icons/fonts/*.* ./www/fonts/"
   },

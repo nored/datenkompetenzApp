@@ -1,5 +1,7 @@
 var $$ = Dom7;
 
+const baseUrl = 'https://upload.antidote.enterprises';
+
 var app = new Framework7({
   root: '#app', // App root element
 
@@ -9,7 +11,9 @@ var app = new Framework7({
 
   // App root data
   data: function () {
-    return {};
+    return {
+      id: '',
+    };
   },
   // App root methods
   methods: {},
@@ -38,35 +42,46 @@ var app = new Framework7({
     },
     connection: function (isOnline) {
       if (isOnline) {
-        if (app.views.main.router.currentRoute.path == '/offline/') {
-          app.views.main.router.navigate('/', {
-            reloadCurrent: true,
-            reloadAll: true,
-          });
-        }
+        app.popup.close('#offline-popup', true);
       } else {
-        app.views.main.router.navigate('/offline/', { reloadCurrent: true });
+        app.popup.open('#offline-popup', true);
       }
     },
   },
 });
 
 $$('#initial-form-send').on('click', function () {
-  alert('click');
   if (app.input.validateInputs('#initial-form')) {
     var formData = app.form.convertToData('#initial-form');
     formData.mobile = 'true';
     formData.ds = 'on';
-    alert(JSON.stringify(formData));
+    app.request.promise.post(baseUrl + '/register', formData).then(function () {
+      app.popup.open('#success-popup', true);
+    });
   }
 });
 
 function handleOpenURL(url) {
   var strValue = url;
-  strValue = strValue.replace('thbdatenkompetenz:/', '');
-  if (strValue == '/form/') {
-    setTimeout(function () {
-      app.views.main.router.navigate('/form/', { reloadCurrent: true });
-    }, 200);
-  }
+  let id = strValue.replace('thbdatenkompetenz://', '');
+  app.request.promise.json(baseUrl + '/show/email/' + id).then(function (res) {
+    app.popup.close('#success-popup', true);
+    app.views.main.router.navigate(
+      '/upload-form/?email=' +
+        res.data.email +
+        '&action=' +
+        baseUrl +
+        '/upload',
+      {
+        reloadCurrent: true,
+      }
+    );
+  });
 }
+
+app.on('formAjaxComplete', function (formEl, data, xhr) {
+  app.views.main.router.navigate('/', {
+    reloadCurrent: true,
+  });
+  app.popup.open('#final-success-popup', true);
+});

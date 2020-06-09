@@ -12,16 +12,8 @@ var routes = [
     url: './pages/privacy.html',
   },
   {
-    path: '/offline/',
-    url: './pages/offline.html',
-  },
-  {
-    path: '/about/',
-    url: './pages/about.html',
-  },
-  {
-    path: '/form/',
-    url: './pages/form.html',
+    path: '/upload-form/',
+    componentUrl: './pages/upload.html',
   },
 
   // Default route (404 page). MUST BE THE LAST
