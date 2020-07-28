@@ -1,6 +1,6 @@
 var $$ = Dom7;
 
-const baseUrl = 'https://upload.antidote.enterprises';
+const baseUrl = 'https://dc4aww.th-brandenburg.de';
 
 var app = new Framework7({
   root: '#app', // App root element
