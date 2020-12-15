@@ -40,125 +40,469 @@
             <div class="navbar-inner">
               <div class="left"></div>
               <div class="title">Datenkompetenz 4.0</div>
-              <div class="right"></div>
-            </div>
-          </div>
-          <!-- Toolbar-->
-          <div class="toolbar toolbar-bottom">
-            <div class="toolbar-inner">
-              <a href="/impressum/" class="link">Impressum</a>
-            </div>
-          </div>
-          <!-- Scrollable page content-->
-          <div class="page-content">
-            <div class="responsive">
-              <img
-                src="./assets/logo/aww_logo_700_vector.png"
-                class="responsive-img"
-              />
-            </div>
-            <div class="block">
-              <div class="list no-hairlines-md">
-                <form class="list store-data" id="initial-form">
-                  <ul>
-                    <li>
-                      <div class="item-content item-input">
-                        <div class="item-inner">
-                          <div class="item-title item-label">Vorname</div>
-                          <div class="item-input-wrap">
-                            <input
-                              type="text"
-                              id="inputFirstName"
-                              name="firstName"
-                              placeholder="Vorname"
-                              required
-                              validate
-                              data-error-message="Bitte füllen Sie dieses Feld aus."
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="item-content item-input">
-                        <div class="item-inner">
-                          <div class="item-title item-label">Nachname</div>
-                          <div class="item-input-wrap">
-                            <input
-                              type="text"
-                              id="inputLastName"
-                              name="lastName"
-                              placeholder="Nachname"
-                              required
-                              validate
-                              data-error-message="Bitte füllen Sie dieses Feld aus."
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="item-content item-input">
-                        <div class="item-inner">
-                          <div class="item-title item-label">Email</div>
-                          <div class="item-input-wrap">
-                            <input
-                              type="email"
-                              id="inputEmail"
-                              name="email"
-                              placeholder="Email"
-                              required
-                              validate
-                              data-error-message="Bitte füllen Sie dieses Feld aus."
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="item-content item-input">
-                        <div class="item-inner">
-                          <div class="item-title item-label">Datenschutz</div>
-                          <div class="item-checkbox">
-                            <label class="checkbox">
-                              <input
-                                type="checkbox"
-                                id="checkboxDatenschutz"
-                                name="ds"
-                                required
-                                validate
-                                data-error-message="Bitte akzeptieren Sie die Datenschutzerklärung."
-                              />
-                              <i class="icon-checkbox"></i>
-                            </label>
-                            <p class="checkbox-text">
-                              Ich habe die
-                              <a href="/privacy/">Datenschutzerklärung</a>
-                              gelesen und akzeptiere diese.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="item-content send">
-                        <div class="item-inner">
-                          <div class="item-input-wrap">
-                            <a
-                              href="#"
-                              id="initial-form-send"
-                              class="col button button-fill send-button"
-                              >Senden</a
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </form>
+              <div class="right">
               </div>
             </div>
           </div>
+
+          <div class="toolbar tabbar tabbar-labels toolbar-bottom">
+            <div class="toolbar-inner">
+              <a href="#tab-1" class="tab-link tab-link-active">
+                <!-- Different icons for iOS and MD themes -->
+                <i class="icon f7-icons if-not-md">house_fill</i>
+                <i class="icon material-icons md-only">home</i>
+                <!-- Label text -->
+                <span class="tabbar-label">Start</span>
+              </a>
+              <a href="#tab-2" class="tab-link">
+                <i class="icon f7-icons if-not-md">book_fill</i>
+                <i class="icon material-icons md-only">import_contacts</i>
+                <span class="tabbar-label">Bildung</span>
+              </a>
+              <a href="#tab-3" class="tab-link">
+                <i class="icon f7-icons if-not-md">checkmark_circle_fill</i>
+                <i class="icon material-icons md-only">check_circle_outline</i>
+                <span class="tabbar-label">Quiz</span>
+              </a>
+              <a href="#tab-4" class="tab-link">
+                <i class="icon f7-icons if-not-md">graph_circle_fill</i>
+                <i class="icon material-icons md-only">share</i>
+                <span class="tabbar-label">Datenqualität</span>
+              </a>
+            </div>
+          </div>
+          <!-- Tabs -->
+          <div class="tabs">
+            <!-- First tab, active -->
+            <div class="page-content tab tab-active" id="tab-1">
+              <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <h5>Datenqualität</h5>
+                      <h6>Wie gut sind Ihre Daten?</h6>
+                      <p class="swiper-text">Die Erstellung der vorliegenden App erfolgt im Rahmen des ESF-Projekts „Datenkompetenz 4.0 für die digitale Arbeitswelt“. Das Projekt wird über eine Laufzeit von drei Jahren durch das Ministerium für Arbeit, Soziales, Gesundheit, Frauen und Familie (MASGF) aus Mitteln des Europäischen Sozialfonds gefördert.</p> 
+                      <div class="responsive-start">
+                        <img id="eu-social-fund"
+                          src="./assets/logo/EU_Sozialfonds_links.jpg"
+                          class="responsive-img"
+                        />
+                        <img id="brandenburg-country"
+                          src="./assets/logo/Land-Brandenburg-Logo.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <p class="swiper-text">Wir stehen einem rasant wachsenden Volumen an Daten gegenüber. Pro Minute gibt es 300 Tausend neue Tweets auf Twitter, 243.000 neue Fotos auf Facebook, 400 hochgeladene Video-Minuten auf You Tube und ca. 4 Mio. Suchanfragen bei Google, um nur einen Bruchteil des Datenflusses zu veranschaulichen.</p>
+
+                      <h6>Hinzu kommen Daten aus weiteren Quellen wie:</h6>
+                        <ul>
+                          <li>Unternehmensinterne Daten (Kundendaten, Nutzungsdaten von Maschinen und Anlagen, Lagerhaltungsdaten usw.</li>
+                          <li>Öffentlich zugängliche Daten (Klima- und Wetterdaten, Bevölkerungsdaten, Konjunkturdaten, Verkehrsdaten usw.)
+                            oder dem</li>
+                            <li>Internet der Dinge</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <p class="swiper-text">Unternehmerische Entscheidungen basieren auf der Nutzung und Auswertung solcher Daten.
+                      </p>
+                      <p class="swiper-text">Fehlerhafte Daten erzeugen falsche Ergebnisse führen dann zu falsche Entscheidungen:
+                      </p>
+                        <ul>
+                          <li>Bei Optimierungsentscheidungen in Produktionsprozessen können falsche Daten zu massiven Kosten auf Grund fehlerhafter Prozessänderungen führen.</li>
+                          <li>Prognosen über das Absatzverhalten im Unternehmen können auf Basis falscher Vergangenheitswerte fehl gerichtete Erwartungen erzeugen und die Kapazitätsrechnung beeinflussen.</li>
+                          <li>Daten sind Grundlage für Lernprozesse im Machine Learning. Eine unzureichende Datenlage kann hier katastrophale Folgen haben.</li>
+                        </ul>
+                        <p class="swiper-text">Daher ist es wichtig, bei jeder Nutzung von Daten die Frage nach deren Qualität zu stellen.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <p class="swiper-text">Diese App soll Ihnen helfen zu verstehen, warum Datenqualität wichtig ist, welche Kriterien Ihre Datenqualität beeinflusst und was sie tun können, um eine höhere Datenqualität als Basis für ihre unternehmerischen Entscheidungen zu erhalten. <br>
+                      Außerdem bietet die  App die Möglichkeit beispielhaft die Qualität ihrer Daten zu überprüfen.Der Upload funktioniert nicht. Woran kann das liegen?agen dazu.alten, kann aber vielleicht auch in den Datenschutzhinweisen mit</p>
+                        <ul>
+                          <li>Weiterbildung – Informationen zum Thema</li>
+                          <li>Quiz – Wiederholungsfragen</li>
+                          <li>Datenqualität – die Möglichkeit eigene Datensätze auf deren Qualität zu prüfen</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <!-- Second tab -->
+            <div class="page-content tab" id="tab-2">
+              <div data-pagination='{"el": ".swiper-pagination"}' data-space-between="50" class="swiper-container swiper-init demo-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <h5>Was sind eigentlich Daten?</h5>
+                      <p class="swiper-text">Daten kann man als „gespeicherte Fakten“ bezeichnen.</p> 
+                      <ul>
+                        <li>Im 20. Jahrhundert setzte parallel zur Verbreitung von Computern ein starkes, gegenwärtig exponentielles Wachstum der Datenmenge ein. Gleichzeitig wurden digitale Daten zur vorherrschenden Erscheinungsform.</li>
+                        <li>Digital bedeutet die Umwandlung in einzelne Messwerte. Aus einzelnen Tönen oder Bildpunkten wird so eine Zahlenreihe. Eine derart definierte Beziehung zwischen Zeichen und Ordnungszahl wird auch als Code oder Codierung bezeichnet.</li>
+                        <li>Digitale Daten werden in der Regel von Computern verarbeitet; sie sind maschinenlesbar.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <h6>Datentypen</h6>
+                      <p class="swiper-text">Bei der Verarbeitung von Daten spielt die Frage „Was soll verarbeitet werden?“ eine wichtige Rolle. Über Datentypen kann eine gewisse Übersichtlichkeit und Ordnung in einen Datensatz gebracht werden, indem jeder Variablen eines Datensatzes ein bestimmter Datentyp zugeordnet wird.</p> 
+                      <ul>
+                        <li><b>Zeichen:</b> hier können nur Buchstaben oder Zeichen gespeichert werden wie z.B. M = male, F= female für eine Unterteilung nach Geschlecht</li>
+                        <li><b>Text:</b> hier könnten bspw. Ortsnamen oder Straßennamen in Datensätzen von Kundenstammdaten hinterlegt werden</li>
+                        <li><b>Zahlen:</b> diese enthalten Werte, die auch in mathematischen Operationen genutzt werden können wie Umsatzzahlen, Preise, Stückzahlen u.a.m. Es muss man je nach Fragestellung die Größe und die Ausprägung der Zahl berücksichtigen werden.
+                        <ul style="padding-left: 20px;">
+                          <li style="font-size: 0.8rem;">Es wird unterschieden zwischen kleine, mittleren und großen Zahlenwerten.</li>
+                          <li style="font-size: 0.8rem;">Weiterhin können ganze Zahlen oder Kommazahlen auftreten.</li>
+                          <li style="font-size: 0.8rem;">Oder auch Zahlen mit positiven oder negativen Werten.</li>
+                        </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <h5>Datensätze</h5>
+                      <p class="swiper-text">Zu Analysezwecken werden in der Regel umfangreiche Datensätze verwendet. Diese bestehen aus einer ID, der mehreren Variablen mit unterschiedlichen Ausprägungen zugeordnet werden. <br>
+                      Die ID muss eineindeutig sein. Es kann z.B. die Kundennummer sein, die nur einmalig vergeben werden soll oder auch eine Personalnummer im Unternehmen. <br>
+                      Dieser ID werden unterschiedliche relevante Variablen zugeordnet:
+                      </p> 
+                      <div class="responsive">
+                        <img style="min-width: 85vw;"
+                          src="./assets/logo/1.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <h5>Was sind eigentlich Daten?</h5>
+                      <p class="swiper-text">Sollen vorhandene Datensätze ausgewertet werden, sollten als erster Schritt </p>
+                      <ul>
+                        <li>die Mischung und das</li>
+                        <li>Erscheinungsbild überprüft werden.</li>
+                      </ul>
+                      <p class="swiper-text">
+                        Hier kann man schon einmal auf eine sinnvolle Grundgesamtheit (gute Mischung) schauen – z.B. für eine Untersuchung über das Einkaufsverhalten der Bevölkerung macht es keinen Sinn sich nur Daten von Männern im Alter von 20 – 22 Jahren, die im Raum Berlin leben, anzusehen.
+                        <br>
+                        Weiterhin sagt das Erscheinungsbild etwas darüber aus, wie die Daten strukturiert sind: wie viele Einzeldatensätze gibt es und viele Variablen wurden je Datensatz erhoben.
+                      </p> 
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <p class="swiper-text">Selten liegen Daten in der gewünschten oder geforderten Qualität vor. Anhand folgender Kriterien lässt sich die Datenqualität prüfen und verbessern: <br>
+                      <b>Beispiel:</b><br>
+                        Ein Büromaterial-Versandhändler, der über die Datenanalyse seiner Umsätze in der Kundenbestandsliste Prognosen zum künftigen Abverkauf einzelner Produkte erstellen möchte:
+                        </p> 
+                      <ul>
+                        <li style="font-size: 0.78rem;"><b>Verständlichkeit:</b> Was soll es bedeuten, wenn bei den Stückzahlen an verkauften Bleistiften ein Wert „&%!“ auftaucht?</li>
+                        <li style="font-size: 0.78rem;"><b>Nützlichkeit:</b> Bringt es etwas zu wissen, wenn Kunde xy im I.Quartal 12 Bleistifte im nächsten aber nur 5 Bleistifte kauft?</li>
+                        <li style="font-size: 0.78rem;"><b>Gültigkeit:</b> Woher kommt die Information? Ist es eine geprüfte Quelle, wie eine Kundendatenbank mit allen Bestellungen oder hat es jemand einfach nur erzählt.</li>
+                        <li style="font-size: 0.78rem;"><b>Glaubwürdigkeit:</b> Können wirklich 177,81 Bleistifte verkauft sein?</li>
+                        <li style="font-size: 0.78rem;"><b>Exaktheit:</b> Sind die Daten vollständig, d.h. für alle Produkte gibt es vorliegende Verkaufsinformationen. Es kann auch ein Verkaufsergebnis für ein Produkt von Null sein. Ergeben sich Widersprüche, wie z.B. Postleitzahl und Ort in den Kundendaten passen nicht zusammen.</li>
+                        <li style="font-size: 0.78rem;"><b>Aktualität:</b> Von welchem Zeitraum stammen die Verkaufserlöse?</li>
+                        <li style="font-size: 0.78rem;"><b>Volatilität:</b> Hier geht es um zeitlich bestimmte Schwankungen. Es macht keine Sinn saisonale Sommerartikel für eine Herbst-/ Winterprognose zu betrachten und umgekehrt.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <p class="swiper-text">Weiterhin sollten Daten auf folgende Kriterien hin überprüft werden:
+                      </p> 
+                      <ul>
+                        <li style="font-size: 0.5em;"><b>Gibt es Dopplungen?</b>
+                        <ul style="padding-left: 20px;">
+                          <li style="font-size: 0.8em;">
+                            Sind Kunden u.U. zweimal in den Kundenstammdaten vorhanden oder Personalnummern in Unternehmen werden doppelt vergeben? Und wenn ja, warum und welches ist das richtige (valide) Kundenprofil?
+                          </li>
+                        </ul>
+                        </li>
+                        <li style="font-size: 0.5em;"><b>Fehlende Werte:</b>
+                          <ul style="padding-left: 20px;">
+                            <li style="font-size: 0.8em;">
+                              Besteht ein Datensatz aus mehreren Variablen – ist in jeder der Variablen ein Wert vorhanden? <br>
+                              Das kann auch ein Wert „0“ oder „keine Angabe“ sein, wenn es keine Information dazu gibt. <br>
+                              Fehlende Werte können durch sinnvolle Angaben ergänzt werden. <br>
+                            </li>
+                          </ul>
+                        </li>
+                        <li style="font-size: 0.5em;"><b>Inkonsistenz:</b>
+                          <ul style="padding-left: 20px;">
+                            <li style="font-size: 0.8em;">
+                              Gibt es Widersprüche in den Datenangaben? <br> 
+                              Wenn bei der Adresse eine Postleitzahl in Brandenburg an der Havel angegeben wurde, bei der Festnetznummer jedoch eine Vorwahl von Potsdam vorhanden ist, kann es sich entweder um einen tatsächlichen Fehler oder aber um kundenabhängige plausible Informationen handeln.
+                            </li>
+                          </ul>
+                        </li>
+                        <li style="font-size: 0.5em;"><b>Offensichtlich falsche Werte:</b>
+                          <ul style="padding-left: 20px;">
+                            <li style="font-size: 0.8em;">
+                              Bei Befragungen tritt bspw. der Fall auf, dass befragte Personen bewusst falsche Angaben machen oder die Erfassung fehlerhaft ist.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <p class="swiper-text">Beispiel für Typische Fehler:
+                      </p> 
+                      <div class="responsive">
+                        <img style="min-width: 85vw;"
+                          src="./assets/logo/2.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block block-start-0">
+                      <div class="responsive-start">
+                        <img
+                          src="./assets/logo/aww_logo_pure.png"
+                          class="responsive-img"
+                        />
+                      </div>
+                      <h5>Was sind eigentlich Daten?</h5>
+                      <p style="font-size: 0.5em;">In diesem kleinen Beispiel sind die Fehler im Datensatz offensichtlich. <br><br>
+
+                        In der Realität sind solche Datensätze jedoch viel umfangreicher und daher die Fehlersuche händisch nicht möglich.<br><br> 
+                        
+                        Es gibt verschiedene  Möglichkeiten wie z.B. das Arbeiten mit R. Aber auch schon in einfachen Excel-Tabellen kann eine Bereinigung über entsprechende Funktionen erfolgen.<br><br>
+                        <b>
+                          Wichtig ist beim nutzenstiftenden Umgang mit Daten immer, dass man sich möglicher Fehler und ihrer Konsequenzen in Datensätzen bewusst ist. Man kann diese selbst suchen, finden und mit viel Zeitaufwand beseitigen oder sich Know How besorgen.
+                        </b>
+                        <br><br>
+                        Dies betrifft den Bereich der Datenvorverarbeitung (Data Preparation and Wrangling). Mehr dazu u.a. im ersten Modul des Zertifikatskurses „Data Science“ der Agentur für wissenschaftliche Weiterbildung und Wissenstransfer e.V. 
+                        </p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <!-- Third tab -->
+            <div class="page-content tab" id="tab-3">
+              <div class="responsive">
+                <img
+                  src="./assets/logo/aww_logo_700_vector.png"
+                  class="responsive-img"
+                />
+              </div>
+              <div class="block">
+                <h2>Quiz</h2>
+                <p style="font-size: 1em;">Auf den nächsten Seiten erwarten Sie ein paar Fragen zu den vorherigen Inhalten.
+                  Sie dienen der Wiederholung und Festigung der Informationen.
+                  <br><br>
+                  Viel Spaß dabei!
+                </p>
+                <div class="item-content start">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <a
+                        href="#"
+                        id="start-quiz"
+                        class="col button button-fill send-button"
+                        >Start</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fourth tab -->
+            <div class="page-content tab" id="tab-4">
+              <div class="responsive">
+                <img
+                  src="./assets/logo/aww_logo_700_vector.png"
+                  class="responsive-img"
+                />
+              </div>
+              <div class="block">
+                <div class="list no-hairlines-md">
+                  <form class="list store-data" id="initial-form">
+                    <ul>
+                      <li>
+                        <div class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Vorname</div>
+                            <div class="item-input-wrap">
+                              <input
+                                type="text"
+                                id="inputFirstName"
+                                name="firstName"
+                                placeholder="Vorname"
+                                required
+                                validate
+                                data-error-message="Bitte füllen Sie dieses Feld aus."
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Nachname</div>
+                            <div class="item-input-wrap">
+                              <input
+                                type="text"
+                                id="inputLastName"
+                                name="lastName"
+                                placeholder="Nachname"
+                                required
+                                validate
+                                data-error-message="Bitte füllen Sie dieses Feld aus."
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Email</div>
+                            <div class="item-input-wrap">
+                              <input
+                                type="email"
+                                id="inputEmail"
+                                name="email"
+                                placeholder="Email"
+                                required
+                                validate
+                                data-error-message="Bitte füllen Sie dieses Feld aus."
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content item-input">
+                          <div class="item-inner">
+                            <div class="item-title item-label">Datenschutz</div>
+                            <div class="item-checkbox">
+                              <label class="checkbox">
+                                <input
+                                  type="checkbox"
+                                  id="checkboxDatenschutz"
+                                  name="ds"
+                                  required
+                                  validate
+                                  data-error-message="Bitte akzeptieren Sie die Datenschutzerklärung."
+                                />
+                                <i class="icon-checkbox"></i>
+                              </label>
+                              <p class="checkbox-text">
+                                Ich habe die
+                                <a href="/privacy/">Datenschutzerklärung</a>
+                                gelesen und akzeptiere diese.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="item-content send">
+                          <div class="item-inner">
+                            <div class="item-input-wrap">
+                              <a
+                                href="#"
+                                id="initial-form-send"
+                                class="col button button-fill send-button"
+                                >Senden</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>         
         </div>
       </div>
 
@@ -236,6 +580,126 @@
                   </p>
                 </div>
                 <div class="card-footer text-color-white"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup" id="quiz-popup">
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="title" id="quiz-title"></div>
+                <span class="right" id="time-1" style="margin-right: 15px;">00:30</span>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="responsive">
+                <img
+                  src="./assets/logo/aww_logo_700_vector.png"
+                  class="responsive-img"
+                />
+              </div>
+              <div class="block">
+                <p id="question"></p>
+                <div class="list" id="quiz-form">
+                  <ul>
+                    <li>
+                      <label class="item-radio item-content" id="label-0">
+                        <input type="radio" name="answer" id="radio-0" value="" validate>
+                        <i class="icon icon-radio"></i>
+                        <div class="item-inner">
+                          <div class="item-title" id="title-radio-0"></div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-radio item-content" id="label-1">
+                        <input type="radio" name="answer" id="radio-1" value="" validate>
+                        <i class="icon icon-radio"></i>
+                        <div class="item-inner">
+                          <div class="item-title" id="title-radio-1"></div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-radio item-content" id="label-2">
+                        <input type="radio" name="answer" id="radio-2" value="" validate>
+                        <i class="icon icon-radio"></i>
+                        <div class="item-inner">
+                          <div class="item-title" id="title-radio-2"></div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="item-radio item-content" id="label-3">
+                        <input type="radio" name="answer" id="radio-3" value="" validate>
+                        <i class="icon icon-radio"></i>
+                        <div class="item-inner">
+                          <div class="item-title" id="title-radio-3"></div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <div class="item-content send">
+                        <div class="item-inner">
+                          <div class="item-input-wrap">
+                            <a
+                              href="#"
+                              id="quiz-send"
+                              class="col button button-fill send-button"
+                              >Bestätigen</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup -->
+      <div class="popup" id="quiz-eval-popup">
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner">
+                <div class="title" id="quiz-title"></div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="responsive">
+                <img
+                  src="./assets/logo/aww_logo_700_vector.png"
+                  class="responsive-img"
+                />
+              </div>
+              <div class="block">
+                <h2>Ergebnis</h2>
+                <h3 id="score"></h3>
+                <p id="result" style="font-size: 1em;">
+                </p>
+                <div class="item-content start">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <a
+                        href="#"
+                        id="finish-quiz"
+                        class="col button button-fill send-button"
+                        >OK</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
